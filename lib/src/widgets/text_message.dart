@@ -155,6 +155,11 @@ class TextMessage extends StatelessWidget {
             ? 0.0
             : _theme.messageInsetsHorizontal,
         vertical: _theme.messageInsetsVertical,
+// =======
+//       margin: const EdgeInsets.symmetric(
+//         horizontal: 14,
+//         vertical: 6,
+// >>>>>>> Update text_message.dart
       ),
       child: _textWidgetBuilder(_user, context, _enlargeEmojis),
     );
