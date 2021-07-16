@@ -117,7 +117,7 @@ class _ChatListState extends State<ChatList>
       );
     }
 
-    _scrollToBottomIfNeeded(oldList);
+    //_scrollToBottomIfNeeded(oldList);
 
     _oldData = List.from(widget.items);
   }
