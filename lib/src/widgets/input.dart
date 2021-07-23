@@ -212,6 +212,7 @@ class _InputState extends State<Input> {
                         LogicalKeyboardKey.enter, LogicalKeyboardKey.shift):
                     const NewLineIntent(),
               },
+// <<<<<<< HEAD
               child: Actions(
                 actions: {
                   SendMessageIntent: CallbackAction<SendMessageIntent>(
@@ -225,6 +226,41 @@ class _InputState extends State<Input> {
                         text: _newValue,
                         selection: TextSelection.fromPosition(
                           TextPosition(offset: _newValue.length),
+// =======
+//             ),
+//           },
+//           child: Focus(
+//             autofocus: true,
+//             child: Material(
+//               borderRadius:
+//                   InheritedChatTheme.of(context).theme.inputBorderRadius,
+//               color: InheritedChatTheme.of(context).theme.inputBackgroundColor,
+//               child: Container(
+//                 padding: EdgeInsets.fromLTRB(
+//                   20 + _query.padding.left,
+//                   16,
+//                   20 + _query.padding.right,
+//                   16 + _query.viewInsets.bottom + _query.padding.bottom,
+//                 ),
+//                 child: Row(
+//                   children: [
+//                     if (widget.onAttachmentPressed != null) _leftWidget(),
+//                     Expanded(
+//                       child: TextField(
+//                         controller: _textController,
+//                         decoration: InputDecoration.collapsed(
+//                           hintStyle: InheritedChatTheme.of(context)
+//                               .theme
+//                               .inputTextStyle
+//                               .copyWith(
+//                                 color: InheritedChatTheme.of(context)
+//                                     .theme
+//                                     .inputTextColor
+//                                     .withOpacity(0.5),
+//                               ),
+//                           hintText:
+//                               InheritedL10n.of(context).l10n.inputPlaceholder,
+// >>>>>>> Update input.dart
                         ),
                       );
                     },
